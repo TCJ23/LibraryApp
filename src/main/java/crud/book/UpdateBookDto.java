@@ -3,14 +3,24 @@ package crud.book;
 public class UpdateBookDto {
     private Long id;
     private String name;
+    private String isbn;
 
 
     UpdateBookDto() {
     }
 
-    public UpdateBookDto(Long id, String name) {
+    public UpdateBookDto(Long id, String name, String isbn) {
         this.id = id;
         this.name = name;
+        this.isbn = isbn;
+    }
+
+    public String getIsbn() {
+        return isbn;
+    }
+
+    public void setIsbn(String isbn) {
+        this.isbn = isbn;
     }
 
     public Long getId() {

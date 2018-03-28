@@ -1,16 +1,16 @@
 package crud.book;
 
-public class CreateBook {
+public class CreateBookDto {
 
     private String name;
     private String isbn;
 
-    public CreateBook(String name, String isbn) {
+    public CreateBookDto(String name, String isbn) {
         this.name = name;
         this.isbn = isbn;
     }
 
-    CreateBook() {
+    CreateBookDto() {
     }
 
     public String getName() {

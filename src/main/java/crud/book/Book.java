@@ -16,6 +16,7 @@ public class Book {
     @Column
     private String isbn;
 
+
     private Book(){
 
     }
@@ -24,6 +25,10 @@ public class Book {
         Objects.requireNonNull(name);
         Objects.requireNonNull(isbn);
         this.name = name;
+        this.isbn = isbn;
+    }
+
+    public void setIsbn(String isbn) {
         this.isbn = isbn;
     }
 
@@ -42,4 +47,5 @@ public class Book {
     public void setName(String name) {
         this.name = name;
     }
+
 }
